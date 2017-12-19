@@ -34,5 +34,7 @@ plot(sep$測站氣壓,type="b", pch=16, col="black",las=1,xlab="日期",ylab="大氣壓",
 plot(oct$測站氣壓,type="b", pch=16, col="black",las=1,xlab="日期",ylab="大氣壓",main="2017/10", axes=TRUE)
 plot(nov$測站氣壓,type="b", pch=16, col="black",las=1,xlab="日期",ylab="大氣壓",main="2017/11", axes=TRUE)
 plot(dec$測站氣壓,type="b", pch=16, col="black",las=1,xlab="日期",ylab="大氣壓",main="2017/12", axes=TRUE)
-
+w2017=rbind(jul,aug,sep,oct,nov,dec)
+table(w2017$label)
+plot(氣溫~label,w2017,las=1)
 
